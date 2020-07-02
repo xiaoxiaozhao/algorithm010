@@ -25,9 +25,3 @@ func searchPer(nums []int, index int, res *[][]int) {
 		mem[nums[k]] = true
 	}
 }
-func dump(a []int)[]int{
-	b := make([]int,len(a))
-	copy(b,a)
-	return b
-}
-
