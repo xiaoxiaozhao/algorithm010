@@ -44,7 +44,7 @@ func getAllCombineDic(wordList []string,baseLen int) map[string][]string  {
 	for _,value := range wordList{
 		//构造词典
 		for i:= 0;i < len(value);i++{
-			newWord := value[0:i] + "*" + value[i+1:len(value)]
+			newWord := value[0:i] + "*" + value[i+1:]
 			if _,ok := res[newWord];ok{
 				res[newWord] = append(res[newWord],value)
 			}else {

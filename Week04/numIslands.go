@@ -1,7 +1,5 @@
 package Week04
 
-import "fmt"
-
 func numIslands(grid [][]byte) int {
 	row := len(grid)
 	if row == 0{
@@ -15,7 +13,7 @@ func numIslands(grid [][]byte) int {
 			if grid[i][j] == '1'{
 				count++
 				processNums(grid,i,j)
-				fmt.Print("1111")
+				//fmt.Print("1111")
 			}
 
 		}
