@@ -12,7 +12,7 @@ func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 				f[j] = 0
 				continue
 			}
-			if j - 1 >= 0 && obstacleGrid[i][j-1] == 0 {
+			if j-1 >= 0 && obstacleGrid[i][j-1] == 0 {
 				f[j] += f[j-1]
 			}
 		}
@@ -20,4 +20,3 @@ func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 	return f[m-1]
 
 }
-

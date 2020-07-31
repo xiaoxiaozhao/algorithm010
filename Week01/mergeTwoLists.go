@@ -18,11 +18,9 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 		if tmpl1 == nil {
 			tmp = tmpl2
 			headPoint.Next = tmp
-			break
 		} else if tmpl2 == nil {
 			tmp = tmpl1
 			headPoint.Next = tmp
-			break
 		} else {
 			if tmpl1.Val <= tmpl2.Val {
 				tmp.Val = tmpl1.Val

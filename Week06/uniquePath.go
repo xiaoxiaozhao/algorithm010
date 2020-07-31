@@ -1,6 +1,5 @@
 package Week06
 
-
 func uniquePaths(m int, n int) int {
 	if m == 1 || n == 1{
 		return 1
@@ -18,3 +17,25 @@ func uniquePaths(m int, n int) int {
 	return res[n-1]
 
 }
+//func stringtoslicebyte(buf *tmpBuf, s string) []byte {
+//	var b []byte
+//	if buf != nil && len(s) <= len(buf) {
+//		*buf = tmpBuf{}
+//		b = buf[:len(s)]
+//	} else {
+//		b = rawbyteslice(len(s))
+//	}
+//	copy(b, s)
+//	return b
+//}
+//
+//func rawstring(size int) (s string, b []byte) {
+//	p := mallocgc(uintptr(size), nil, false)
+//
+//	stringStructOf(&s).str = p
+//	stringStructOf(&s).len = size
+//
+//	*(*slice)(unsafe.Pointer(&b)) = slice{p, size, size}
+//
+//	return
+//}
